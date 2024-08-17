@@ -1,6 +1,7 @@
 <?php
 
 use Core\App;
+use Core\Authenticator;
 use Core\Database;
 use Core\Validator;
 
@@ -47,8 +48,7 @@ if ($user) {
     'password' => password_hash($password, PASSWORD_BCRYPT)
   ]);
 
-  login($user);
+  (new Authenticator())->login($user);
 
-  header('location: /');
-  exit();
+  redirect('/');
 }

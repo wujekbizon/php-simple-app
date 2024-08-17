@@ -25,5 +25,4 @@ $db->query('INSERT INTO `myapp`.`notes` (`body`, `user_id`) VALUES (:body, :user
   'user_id' => $userId
 ]);
 
-header('location: /notes');
-die();
+redirect('/notes');
