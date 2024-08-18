@@ -1,0 +1,16 @@
+{
+    "name": "bizon/demo",
+    "authors": [
+        {
+            "name": "Grzegorz Wolfinger",
+            "email": "grzegorz.wolfinger@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "Http\\": "Http/"
+        }
+    }
+}
