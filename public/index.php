@@ -3,6 +3,8 @@
 use Core\Session;
 use Core\ValidationException;
 
+echo phpinfo();
+
 const BASE_PATH = __DIR__ . '/../';
 require BASE_PATH . '/vendor/autoload.php';
 
